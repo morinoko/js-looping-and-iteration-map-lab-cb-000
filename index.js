@@ -16,3 +16,9 @@ function nameToAttributes(driverArray) {
              lastName: lastName };
   });
 }
+
+function attributesToPhrase(arrayOfDriverObjects) {
+  return arrayOfDriverObjects.map(function (driver) {
+    return `${driver.name} is from ${driver.hometown}`
+  });
+}
