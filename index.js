@@ -4,6 +4,8 @@ function lowerCaseDrivers(driverArray) {
   });
 }
 
+// Assumes an array of full names of drivers,
+// with first and last name separated by a space
 function nameToAttributes(driverArray) {
   return driverArray.map( function(driver) {
     const splitName = driver.split(' ');
